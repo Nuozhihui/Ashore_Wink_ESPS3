@@ -1,0 +1,3198 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x1 (POWERON),boot:0x38 (SPI_FAST_FLASH_BOOT)
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (25) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 15:41:01[0m
+[0;32mI (25) boot: chip revision: V001[0m
+[0;32mI (27) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (44) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (65) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (200) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (202) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (212) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (212) boot: Disabling RNG early entropy source...[0m
+[0;32mI (229) cpu_start: Pro cpu up.[0m
+[0;32mI (229) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (244) cpu_start: Pro cpu start user code[0m
+[0;32mI (244) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (244) cpu_start: Application information:[0m
+[0;32mI (247) cpu_start: Project name:     main[0m
+[0;32mI (251) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (257) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (263) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (269) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (274) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (281) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (288) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (295) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (301) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (308) spi_flash: detected chip: gd[0m
+[0;32mI (311) spi_flash: flash io: dio[0m
+[0;33mW (315) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (329) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (349) example: Turn off LCD backlight[0m
+[0;32mI (349) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (359) example: Initialize Intel 8080 bus[0m
+[0;31mE (359) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (58) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (69) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (76) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (84) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (91) boot: End of partition table[0m
+[0;32mI (96) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (103) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21b74h (138100) map[0m
+[0;32mI (136) esp_image: segment 1: paddr=00031b9c vaddr=3fc91500 size=02e0ch ( 11788) load[0m
+[0;32mI (139) esp_image: segment 2: paddr=000349b0 vaddr=40374000 size=0b668h ( 46696) load[0m
+[0;32mI (152) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=475c0h (292288) map[0m
+[0;32mI (205) esp_image: segment 4: paddr=000875e8 vaddr=4037f668 size=01d9ch (  7580) load[0m
+[0;32mI (207) esp_image: segment 5: paddr=0008938c vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (216) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (217) boot: Disabling RNG early entropy source...[0m
+[0;32mI (234) cpu_start: Pro cpu up.[0m
+[0;32mI (234) cpu_start: Starting app cpu, entry point is 0x403751d8[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (248) cpu_start: Pro cpu start user code[0m
+[0;32mI (248) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (248) cpu_start: Application information:[0m
+[0;32mI (251) cpu_start: Project name:     main[0m
+[0;32mI (256) cpu_start: App version:      7765bcb-dirty[0m
+[0;32mI (261) cpu_start: Compile time:     Sep  3 2022 15:40:48[0m
+[0;32mI (268) cpu_start: ELF file SHA256:  503b42564a022e20...[0m
+[0;32mI (273) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (279) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (286) heap_init: At 3FC9D228 len 0004C4E8 (305 KiB): D/IRAM[0m
+[0;32mI (292) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (299) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (305) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (312) spi_flash: detected chip: gd[0m
+[0;32mI (316) spi_flash: flash io: dio[0m
+[0;33mW (320) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (333) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (0) cpu_start: Starting scheduler on APP CPU.[0m
+[0;32mI (354) example: Turn off LCD backlight[0m
+[0;32mI (354) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (364) example: Initialize Intel 8080 bus[0m
+[0;31mE (364) lcd_panel: esp_lcd_panel_disp_on_off(63): invalid panel handle[0m
+ESP_ERROR_CHECK failed: esp_err_t 0x102 (ESP_ERR_INVALID_ARG) at 0x42008304
+file: "./main/main.c" line 265
+func: app_main
+expression: esp_lcd_panel_disp_on_off(panel_handle, true)
+
+abort() was called at PC 0x40379e47 on core 0
+
+
+Backtrace: 0x40375cda:0x3fcf3930 0x40379e51:0x3fcf3950 0x4037f442:0x3fcf3970 0x40379e47:0x3fcf39e0 0x42008304:0x3fcf3a10 0x420473ef:0x3fcf3b00 0x4037c915:0x3fcf3b30
+
+
+
+
+ELF file SHA256: 503b42564a022e20
+
+Rebooting...
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x3 (RTC_SW_SYS_RST),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x40375679
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xbd0
+load:0x403cc700,len:0x2c6c
+entry 0x403c9900
+[0;32mI (29) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (29) boot: compile time 15:41:01[0m
+[0;32mI (29) boot: chip revision: V001[0m
+[0;32mI (31) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (38) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (43) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (48) boot.esp32s3: SPI Flash Size : 2MB[0m

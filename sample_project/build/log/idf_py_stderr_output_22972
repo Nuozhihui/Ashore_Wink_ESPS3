@@ -1,0 +1,951 @@
+[0;33m--- WARNING: GDB cannot open serial ports accessed as COMx[0m
+[0;33m--- Using \\.\COM9 instead...[0m
+[0;33m--- idf_monitor on \\.\COM9 115200 ---[0m
+[0;33m--- Quit: Ctrl+] | Menu: Ctrl+T | Help: Ctrl+T followed by Ctrl+H ---[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0;33m0x403751d8: call_start_cpu1 at C:/Espressif/frameworks/esp-idf-master/components/esp_system/port/cpu_start.c:142
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x40375cda: panic_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/panic.c:412
+[0m
+[0;33m0x40379e51: esp_system_abort at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:135
+[0m
+[0;33m0x4037f442: abort at C:/Espressif/frameworks/esp-idf-master/components/newlib/abort.c:38
+[0m
+[0;33m0x40379e47: _esp_error_check_failed at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_err.c:47
+[0m
+[0;33m0x42008304: app_main at C:/Users/JINCHANG/Desktop/Project/0.ESPS3/Ashore_Wink_ESPS3/sample_project/main/main.c:265 (discriminator 1)
+[0m
+[0;33m0x420473ef: main_task at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/port_common.c:131 (discriminator 2)
+[0m
+[0;33m0x4037c915: vPortTaskWrapper at C:/Espressif/frameworks/esp-idf-master/components/freertos/FreeRTOS-Kernel/portable/xtensa/port.c:151
+[0m
+[0;33m0x40375679: esp_restart_noos_dig at C:/Espressif/frameworks/esp-idf-master/components/esp_system/esp_system.c:46 (discriminator 1)
+[0m
+[0m

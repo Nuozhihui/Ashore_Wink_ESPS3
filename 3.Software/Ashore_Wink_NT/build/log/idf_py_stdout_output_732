@@ -1,0 +1,68 @@
+ESP-ROM:esp32s3-20210327
+Build:Mar 27 2021
+rst:0x15 (USB_UART_CHIP_RESET),boot:0x38 (SPI_FAST_FLASH_BOOT)
+Saved PC:0x42010368
+SPIWP:0xee
+mode:DIO, clock div:1
+load:0x3fce3810,len:0x1690
+load:0x403c9700,len:0xb7c
+load:0x403cc700,len:0x2bf0
+entry 0x403c98e4
+[0;32mI (24) boot: ESP-IDF ae256e9ca2 2nd stage bootloader[0m
+[0;32mI (25) boot: compile time 22:02:05[0m
+[0;32mI (25) boot: chip revision: V001[0m
+[0;32mI (27) boot_comm: chip revision: 1, min. bootloader chip revision: 0[0m
+[0;32mI (34) boot.esp32s3: Boot SPI Speed : 80MHz[0m
+[0;32mI (39) boot.esp32s3: SPI Mode       : DIO[0m
+[0;32mI (43) boot.esp32s3: SPI Flash Size : 2MB[0m
+[0;32mI (48) boot: Enabling RNG early entropy source...[0m
+[0;32mI (54) boot: Partition Table:[0m
+[0;32mI (57) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (64) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (72) boot:  1 phy_init         RF data          01 01 0000f000 00001000[0m
+[0;32mI (79) boot:  2 factory          factory app      00 00 00010000 00177000[0m
+[0;32mI (87) boot: End of partition table[0m
+[0;32mI (91) boot_comm: chip revision: 1, min. application chip revision: 0[0m
+[0;32mI (98) esp_image: segment 0: paddr=00010020 vaddr=3c050020 size=21ae8h (137960) map[0m
+[0;32mI (131) esp_image: segment 1: paddr=00031b10 vaddr=3fc91700 size=025c4h (  9668) load[0m
+[0;32mI (134) esp_image: segment 2: paddr=000340dc vaddr=40374000 size=0bf3ch ( 48956) load[0m
+[0;32mI (148) esp_image: segment 3: paddr=00040020 vaddr=42000020 size=437f4h (276468) map[0m
+[0;32mI (198) esp_image: segment 4: paddr=0008381c vaddr=4037ff3c size=016fch (  5884) load[0m
+[0;32mI (200) esp_image: segment 5: paddr=00084f20 vaddr=50000000 size=00010h (    16) load[0m
+[0;32mI (209) boot: Loaded app from partition at offset 0x10000[0m
+[0;32mI (210) boot: Disabling RNG early entropy source...[0m
+[0;32mI (227) esp_psram: Found 8MB SPI RAM device[0m
+[0;32mI (227) esp_psram: Speed: 80MHz[0m
+[0;32mI (227) cpu_start: Pro cpu up.[0m
+[0;32mI (228) cpu_start: Single core mode[0m
+[0;32mI (1149) esp_psram: SPI SRAM memory test OK[0m
+[0;32mI (1159) cpu_start: Pro cpu start user code[0m
+[0;32mI (1159) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (1159) cpu_start: Application information:[0m
+[0;32mI (1162) cpu_start: Project name:     i80_controller[0m
+[0;32mI (1168) cpu_start: App version:      1[0m
+[0;32mI (1172) cpu_start: Compile time:     Sep  1 2022 22:01:50[0m
+[0;32mI (1178) cpu_start: ELF file SHA256:  d580041716b1fbd0...[0m
+[0;32mI (1184) cpu_start: ESP-IDF:          ae256e9ca2[0m
+[0;32mI (1190) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (1197) heap_init: At 3FC94B08 len 00054C08 (339 KiB): D/IRAM[0m
+[0;32mI (1203) heap_init: At 3FCE9710 len 00005724 (21 KiB): STACK/DRAM[0m
+[0;32mI (1210) heap_init: At 3FCF0000 len 00008000 (32 KiB): DRAM[0m
+[0;32mI (1217) heap_init: At 600FE010 len 00001FF0 (7 KiB): RTCRAM[0m
+[0;32mI (1223) esp_psram: Adding pool of 8192K of external SPI memory to heap allocator[0m
+[0;32mI (1232) spi_flash: detected chip: gd[0m
+[0;32mI (1236) spi_flash: flash io: dio[0m
+[0;33mW (1239) spi_flash: Detected size(8192k) larger than the size in the binary image header(2048k). Using the size in the binary image header.[0m
+[0;32mI (1253) cpu_start: Starting scheduler on PRO CPU.[0m
+[0;32mI (1258) esp_psram: Reserving pool of 32K of internal memory for DMA/internal allocations[0m
+[0;32mI (1258) example: Turn off LCD backlight[0m
+[0;32mI (1268) gpio: GPIO[3]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1278) example: Initialize Intel 8080 bus[0m
+[0;32mI (1278) example: Install LCD driver of nt35510[0m
+[0;32mI (1288) gpio: GPIO[2]| InputEn: 0| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 [0m
+[0;32mI (1418) example: Turn on LCD backlight[0m
+[0;32mI (1418) example: Initialize LVGL library[0m
+[0;32mI (1418) example: buf1@0x3c080c00, buf2@0x3c0a7d40[0m
+[0;32mI (1418) example: Register display driver to LVGL[0m
+[0;32mI (1428) example: Install LVGL tick timer[0m
+[0;32mI (1428) example: Display LVGL animation[0m
